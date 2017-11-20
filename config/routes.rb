@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root 'longestwords#game'
+
   get 'game', to: 'longestwords#game'
 
   get 'score', to: 'longestwords#score'
