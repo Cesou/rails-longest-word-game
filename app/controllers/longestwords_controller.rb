@@ -42,10 +42,6 @@ class LongestwordsController < ApplicationController
    time > 60.0 ? 0 : input.length * (1.0 - time / 60.0)
   end
 
-  # def compute_score(attempt, time_taken)
-  #   time_taken > 60.0 ? 0 : attempt.size * (1.0 - time_taken / 60.0)
-  # end
-
 end
 
 
