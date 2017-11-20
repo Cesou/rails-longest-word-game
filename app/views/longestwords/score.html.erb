@@ -1,0 +1,11 @@
+<center>
+  <div class = "container">
+    <h1>Game results : </h1>
+    <%= @answer %>
+    <p> Time taken for answer : <%= @time_values %> secondes</p>
+     <div class= "row">
+      <p> Your score : <%=@score.round(2)%></p>
+      <a href="/game" value=" Retry !" class="btn btn-primary">Retry !</a>
+    </div>
+  </div>
+</center>

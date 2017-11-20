@@ -1,0 +1,18 @@
+<center>
+  <h1>Welcome in the Longest Words Game !</h1>
+  <p>Here is the grid :</p>
+  <%= @grid %>
+  <div class = "container">
+    <form action="/score" method="get">
+      <div class ="row">
+        <input type="text" id="answer" name="answer" class = "form-control" placeholder="Tap your answer here" >
+        <input name="grid" type="hidden" value=<%= @grid.split(" ").join('') %>>
+        <input name="at_time" type="hidden" value=<%= @start_time %>>
+      </div>
+      <div class ="row">
+        <input type="submit" value="Go !" class="btn btn-primary">
+      </div>
+    </form>
+      <a href="/game" value="<%= @grid%>" class="btn btn-primary">Refresh grid !</a>
+  </div>
+</center>
